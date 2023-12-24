@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries(width, min-width, max-width, combination)</title>
+</head>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: darkturquoise;
+            padding: 10px;
+        }
+        /* @media screen and (width: 200px) {
+            .box {
+                background-color: blueviolet;
+            }
+        } */
+        /* @media screen and (min-width: 250px) {
+         .box {
+            background-color: chocolate;
+         } 
+        } */
+
+        /* @media screen and (max-width: 300px) {
+            .box{
+                background-color: crimson;
+            }
+        } */
+
+        @media screen and (min-width: 300px) and (max-width: 500px){
+         .box {
+            border-radius: 50%;
+            text-align: center;
+         }   
+        }
+    </style>
+<body>
+    <div class="box">Box</div>
+</body>
+</html>

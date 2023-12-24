@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border</title>
+</head>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        .common{
+            height: 50px;
+            width: 50px;
+            padding: 5px;
+            margin: 5px;
+             box-sizing: border-box;   /* content will be small */
+        }
+        #first {
+            background-color: lightcoral;
+            border: 3px solid rgb(8, 8, 8);
+            
+        }
+        #second {
+            background-color: gray;
+            border: 3px dashed darkred;
+        }
+        #third {
+            background-color: lightseagreen;
+            border: 3px solid black;
+            border-radius: 0px 10px 0px 0px;
+        }
+    </style>
+<body>
+    <div id="first" class="common">First</div>
+    <div id="second" class="common">Second</div>
+    <div id="third" class="common">Third</div>
+</body>
+</html>
