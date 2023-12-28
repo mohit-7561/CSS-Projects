@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .animation{
+            height: 50px;
+            width: 80px;
+            background-color: darkkhaki;
+            text-align: center;
+            border: 1px solid black;
+            position: relative;
+            top: 20px;
+            left: 20px;
+            /* animation-name: animate;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse; */
+
+            animation: animate 5s ease-in-out 1s infinite alternate-reverse;
+            
+        }
+        @keyframes animate {
+            /* from {left: 10px;}
+            to {left: 500px} */
+            0% {left: 10px; top: 0px;}
+            50%{left: 250px; top: 50px;}
+            100%{left: 500px; top: 0px;}
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="animation">Animation</div> 
+</html>

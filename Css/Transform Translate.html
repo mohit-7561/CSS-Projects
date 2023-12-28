@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform- Translate</title>
+    <style>
+        .translate{
+            height: 50px;
+            width: 70px;
+            background-color: darkkhaki;
+            text-align: center;
+            border: 1px solid black;
+            position: relative;
+            top: 50px;
+            left: 50px;
+            transition: all 1s ease-in-out;
+            
+        }
+        .translate:hover{
+                        transform: translate(50px, 50px);
+                        /* transform: translateX(50px); */
+                        /* transform: translateY(50px); */
+        }
+    </style>
+</head>
+<body>
+    <div class="translate">Translate</div>
+</html>

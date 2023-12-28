@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform- Rotate</title>
+    <style>
+        .rotate{
+            height: 50px;
+            width: 50px;
+            background-color: darkkhaki;
+            text-align: center;
+            border: 1px solid black;
+            position: relative;
+            top: 50px;
+            left: 50px;
+            transition: all 1s ease-in-out;
+            
+        }
+        .rotate:hover{
+                        transform: rotate(45deg);
+                        /* transform: rotateX(45deg) */
+                        /* transform: rotateY(45deg) */
+                        /* transform: rotateZ(45deg) */
+        }
+    </style>
+</head>
+<body>
+    <div id="rotate" class="rotate">Rotate</div>
+</html>
