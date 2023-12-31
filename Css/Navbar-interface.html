@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav bar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100%;
+            height: 11vh;
+            background: rgb(1, 19, 51);
+
+        }
+        .list{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+        }
+        .logo{
+            width: 30%;
+            /* background: red; */
+            font-weight: 700;
+            color: antiquewhite;
+            
+        }
+        nav a{
+            width: 10%;
+            /* background-color: brown; */
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: bisque;
+            font-size: 15px;
+            position: relative;
+
+        }
+
+        h1{
+            font-size: 30px;
+        }
+
+        nav a::after{
+            content: "";
+            width: 0%;
+            height: 2px;
+            background: bisque;
+            position: absolute;
+            bottom: -6px;
+            left: 30px;
+            transition: 0.5s;
+
+        }
+
+        nav a:hover::after{
+                width: 70%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="list">
+            <h1 class="logo">Logo</h1>
+            <a href="#">home</a>
+            <a href="#">products</a>
+            <a href="#">services</a>
+            <a href="#">contact us</a>
+            <a href="#">more</a>
+        </nav>
+    </div>
+        
+    
+</body>
+</html>
